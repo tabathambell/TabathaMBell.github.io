@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 /*---- Navbar ----*/
 
@@ -17,19 +14,23 @@ nav a.nav-link {
   letter-spacing: .3rem;
   cursor: pointer;
   padding-right: 6rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 nav ul li {
   text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .navbar-nav > li > a {
   margin-right: 14px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* ---- Header -----*/
@@ -60,6 +61,7 @@ nav ul li {
   color: white;
   text-transform: uppercase;
   text-shadow: 2px 2px #8400ff;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /*---------- Typed Text --------*/
@@ -68,6 +70,7 @@ nav ul li {
   font-size: 2rem;
   color: rgb(114, 38, 214);
   text-shadow: 2px 2px white;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 @media(max-width: 768px) {
@@ -82,15 +85,132 @@ nav ul li {
 
 .btn-main-offer {
   text-transform: uppercase;
-  background-color: rgb(58, 130, 212);
+  background-color: rgb(17, 169, 230);
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color:rgb(111, 0, 255);
   margin: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .btn-main-offer:hover {
   text-decoration: none;
-  color: rgb(58, 130, 212);
+  color: rgb(17, 169, 230);
   transition: .2s ea;
   background-color:rgb(111, 0, 255);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*---------- Image --------*/
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 18rem;
+  border-radius: 50%;
+  padding: .5rem;
+  border: 5px solid rgb(17, 169, 230);
+}
+
+.about-heading {
+  color:rgb(111, 0, 255);
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  text-shadow: 2px 2px rgb(17, 169, 230);
+  padding-right: 3rem;
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
+
+.details {
+  font-family: 'Quicksand', sans-serif !important;
+  padding: .3rem;
+  padding-top: .9rem;
+}
+
+/*---------- Portfolio --------*/
+
+.portfolio-wrapper {
+  background:rgb(214, 214, 214);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 18rem;
+  padding: .5rem;
+  border: 2px ridge rgb(57, 16, 112);
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.portfolio-wrapper h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(17, 169, 230);
+  text-shadow: 2px 2px rgb(111, 0, 255);
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background:rgb(128, 75, 197);
+  width: 18rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid rgb(17, 169, 230);
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -10rem;
+  margin-top: 3.6rem;
+  color:rgb(17, 169, 230);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-image-popupbox {
+  padding: 0 0.5rem;
+  width: 70rem;
+}
+
+.portfolio-description {
+  justify-content: justify;
+  align-items: center;
+  text-align: center;
+  width: 900px;
+  padding-left: 11rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color:rgb(111, 0, 255);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color:rgb(17, 169, 230);
 }
