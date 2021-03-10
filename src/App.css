@@ -70,11 +70,27 @@ nav ul li {
   text-shadow: 2px 2px white;
 }
 
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem;
+  }
+
+  .typed-text {
+    font-size: 1.3rem;
+  }
+}
+
 .btn-main-offer {
   text-transform: uppercase;
-  background-color: white;
-  border: 1px solid purple;
+  background-color: rgb(58, 130, 212);
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color:rgb(111, 0, 255);
   margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  color: rgb(58, 130, 212);
+  transition: .2s ea;
+  background-color:rgb(111, 0, 255);
 }
