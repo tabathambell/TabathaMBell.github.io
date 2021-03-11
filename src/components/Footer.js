@@ -16,6 +16,7 @@ const Footer = () => {
                             <p>E: tabathambell@live.com</p>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     )
