@@ -286,3 +286,11 @@ nav ul li {
   height: 12.25rem !important;
   margin: 2rem 0;
 }
+
+.contacts h1 {
+  margin-bottom: 3rem;
+}
+
+.float-right {
+  float: right;
+}

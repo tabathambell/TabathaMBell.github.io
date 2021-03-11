@@ -16,7 +16,7 @@ const Portfolio = () => {
                 <p className="portfolio-description"><br />Description Description Description Description Description Description
                 Description Description Description Description Description Description Description
                 Description Description Description Description Description Description Description <br /><br />
-                    <b>Github:</b> <a className="hyper-link" onClick{...() => window.open("https://github.com/nickmay9/MovieApp-TeamProject1")}>https://github.com/nickmay9/MovieApp-TeamProject1</a>
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/nickmay9/MovieApp-TeamProject1")}>https://github.com/nickmay9/MovieApp-TeamProject1</a>
                 </p>
             </>
         )
@@ -40,8 +40,8 @@ const Portfolio = () => {
                 <p className="portfolio-description"><br />Description Description Description Description Description Description
                 Description Description Description Description Description Description Description
                 Description Description Description Description Description Description Description <br /><br />
-                    <b>Github:</b> <a className="hyper-link" onClick{...() => window.open("https://github.com/tabathambell/fullstack-project2")}>https://github.com/tabathambell/fullstack-project2</a><br />
-                    <b>Demo:</b> <a className="hyper-link" onClick{...() => window.open("https://creepventures-project2.herokuapp.com/")}>https://creepventures-project2.herokuapp.com/</a>
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/fullstack-project2")}>https://github.com/tabathambell/fullstack-project2</a><br />
+                    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://creepventures-project2.herokuapp.com/")}>https://creepventures-project2.herokuapp.com/</a>
                 </p>
             </>
         )
