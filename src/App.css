@@ -261,10 +261,14 @@ nav ul li {
 
 /*--------- CONTACT INPUTS ---------*/
 
+.contacts {
+  background-color: rgb(214, 214, 214);
+}
+
 .contacts input, .contacts textarea {
   width: 100%;
   box-sizing: border-box;
-  background: rgb(214, 214, 214);
+  background: white;
   resize: none;
   border: 0;
   border-bottom: 2px solid rgb(45, 14, 80);
@@ -293,4 +297,23 @@ nav ul li {
 
 .float-right {
   float: right;
+}
+
+/*----- RESUME -----*/
+
+.resume-display {
+  justify-content: justify;
+  align-items: center;
+  text-align: center;
+  width: 120rem;
+  padding-bottom: 3rem;
+}
+
+.resume-header {
+  color: rgb(17, 169, 230);
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(111, 0, 255);
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
