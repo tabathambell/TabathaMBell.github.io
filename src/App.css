@@ -276,19 +276,24 @@ nav ul li {
   font-family: 'Quicksand', sans-serif !important;
 }
 
+.contacts .container {
+  padding: 4rem 0;
+}
+
 .contacts button {
   border: 2px solid rgb(111, 0, 255);
   text-shadow: 2px 2px black;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .contacts button:hover {
   border: 2px solid rgb(111, 0, 255);
   text-shadow: 2px 2px black;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .contacts textarea {
   height: 12.25rem !important;
-  margin: 2rem 0;
 }
 
 .contacts h1 {
@@ -296,7 +301,34 @@ nav ul li {
 }
 
 .float-right {
-  float: right;
+  float: center;
+}
+
+.error-message {
+  color: rgb(111, 0, 255);
+  text-align: left;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.success-message {
+  font-weight: 900;
+  color: rgb(17, 169, 230);
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/*---------------- MEDIA -----------------------*/
+@media(max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }
 
 /*----- RESUME -----*/
