@@ -201,8 +201,7 @@ nav ul li {
   justify-content: justify;
   align-items: center;
   text-align: center;
-  width: 900px;
-  padding-left: 11rem;
+  width: 70rem;
 }
 
 .hyper-link {
@@ -213,4 +212,77 @@ nav ul li {
 .hyper-link:hover {
   cursor: pointer;
   color:rgb(17, 169, 230);
+}
+
+/*--- MEDIA ----*/
+
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+
+  .portfolio-description {
+    justify-content: justify;
+    align-items: center;
+    text-align: center;
+    width: 35rem;
+  }
+}
+
+@media(max-height: 375px) {
+  .popupbox-wrapper {
+  height: 100%;
+}
+
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+
+  .portfolio-description {
+    justify-content: justify;
+    align-items: center;
+    text-align: center;
+    width: 10rem;
+  }
+}
+
+/*--------- CONTACTS ---------*/
+
+.contacts {
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: rgb(111, 0, 255);
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(17, 169, 230);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*--------- CONTACT INPUTS ---------*/
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(214, 214, 214);
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid rgb(45, 14, 80);
+  margin-bottom: 1rem;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.contacts button {
+  border: 2px solid rgb(111, 0, 255);
+  text-shadow: 2px 2px black;
+}
+
+.contacts button:hover {
+  border: 2px solid rgb(111, 0, 255);
+  text-shadow: 2px 2px black;
+}
+
+.contacts textarea {
+  height: 12.25rem !important;
+  margin: 2rem 0;
 }
