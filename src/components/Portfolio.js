@@ -13,9 +13,11 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={Movie} alt="Movie App School Project" />
-                <p className="portfolio-description"><br />Description Description Description Description Description Description
-                Description Description Description Description Description Description Description
-                Description Description Description Description Description Description Description <br /><br />
+                <p className="portfolio-description"><br />
+                MovieApp is a website designed to use API's in order to search information on films and
+                save them to local storage, then display on a user's watch list. I worked primarily on
+                the HTML, CSS and overall design layout of the application and a little bit of the API's.
+                 <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/nickmay9/MovieApp-TeamProject1")}>https://github.com/nickmay9/MovieApp-TeamProject1</a>
                 </p>
             </>
@@ -37,9 +39,11 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={Creepventures} alt="Full Stack School Project" />
-                <p className="portfolio-description"><br />Description Description Description Description Description Description
-                Description Description Description Description Description Description Description
-                Description Description Description Description Description Description Description <br /><br />
+                <p className="portfolio-description"><br />
+                Creepventures is a full stack website for an interactive user experience in discussing haunted
+                places in the world, posting pictures, comments, and a like/dislike system implementation. I worked
+                primarily on REST, Handlebars, CSS and rendering.
+                 <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/fullstack-project2")}>https://github.com/tabathambell/fullstack-project2</a><br />
                     <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://creepventures-project2.herokuapp.com/")}>https://creepventures-project2.herokuapp.com/</a>
                 </p>
