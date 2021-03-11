@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 const Header = () => {
     return (
-    <div className="header-wrapper">
+    <div id="home" className="header-wrapper">
         <div className="main-info">
             <h1>Full Stack Web Developer</h1>
             <Typed
@@ -13,7 +13,6 @@ const Header = () => {
             backSpeed={80}
             loop
             />
-            <a href="#" className="btn-main-offer">contact me</a>
         </div>
     </div>
     )

@@ -3,7 +3,7 @@ import MyResume from "../tabatharesume.pdf";
 
 const Resume = () => {
     return (
-        <div className="resume">
+        <div id="resume" className="resume">
             <div className="text-center">
                 <h1 className="resume-header">Resume</h1>
             </div>

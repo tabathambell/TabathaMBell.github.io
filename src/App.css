@@ -317,3 +317,31 @@ nav ul li {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+/*----- footer -----*/
+
+.footer {
+  background: white;
+  color:black;
+  padding-left: 6rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(45, 14, 80);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color:rgb(111, 0, 255);
+  cursor: pointer;
+}
+
+.footer-description {
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(114, 38, 214);
+  text-shadow: 2px 2px white;
+  font-family: "Roboto Condensed", sans-serif;
+}
