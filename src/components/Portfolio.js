@@ -117,7 +117,7 @@ const Portfolio = () => {
     }
 
     //Workday Scheduler
-    const openPopupboxCreep = () => {
+    const openPopupboxScheduler= () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={Schedule} alt="Workday Scheduler" />
