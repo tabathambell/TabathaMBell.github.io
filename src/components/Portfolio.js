@@ -2,9 +2,9 @@ import React from 'react'
 import Movie from '../images/movieapp.PNG';
 import Creepventures from '../images/creepventures.PNG';
 import Horror from '../images/quiz.png';
-import Schedule from '../images/scheduler.PNG';
-import Notes from '../images/notetaker.PNG';
-import Tech from '../images/blog.PNG';
+import Schedule from '../images/scheduler.png';
+import Notes from '../images/notetaker.png';
+import Tech from '../images/blog.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
