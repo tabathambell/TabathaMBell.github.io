@@ -1,6 +1,10 @@
 import React from 'react'
 import Movie from '../images/movieapp.PNG';
 import Creepventures from '../images/creepventures.PNG';
+import Horror from '../images/quiz.PNG';
+import Schedule from '../images/scheduler.PNG';
+import Notes from '../images/notetaker.PNG';
+import Tech from '../images/blog.PNG';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
@@ -61,6 +65,14 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
+    //Horror  Quiz
+
+    //Note Taker
+
+    //Workday Scheduler
+
+    //Tech Blog
+
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
@@ -76,6 +88,34 @@ const Portfolio = () => {
                     <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Creepventures} alt="Creepventures" />
+                            <div className="overflow"></div>
+                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className="image-box-wrapper row justify-content-center">
+                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                            <img className="portfolio-image" src={Horror} alt="Horror Quiz" />
+                            <div className="overflow"></div>
+                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className="image-box-wrapper row justify-content-center">
+                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                            <img className="portfolio-image" src={Tech} alt="Tech Blog" />
+                            <div className="overflow"></div>
+                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className="image-box-wrapper row justify-content-center">
+                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                            <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
+                            <div className="overflow"></div>
+                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className="image-box-wrapper row justify-content-center">
+                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                            <img className="portfolio-image" src={Notes} alt="Note Taker" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
