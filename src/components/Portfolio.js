@@ -66,12 +66,105 @@ const Portfolio = () => {
     }
 
     //Horror  Quiz
+    const openPopupboxQuiz = () => {
+        const content = (
+            <>
+                <img className="portfolio-image-popupbox" src={Horror} alt="Horror Quiz" />
+                <p className="portfolio-description"><br />
+                The Horror Movie Quiz was a fun project that includes the use of Web APIs, HTML, CSS, and Javascript. This projet also uses Moment.js. 
+                You are able to go through the quiz and get a time and a score at the end of it and compare it to peers using local storage.
+                 <br /><br />
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/codequiz")}>https://github.com/tabathambell/codequiz</a><br />
+                </p>
+            </>
+        )
+        PopupboxManager.open({ content })
+    }
+
+    const popupboxConfigQuiz = {
+        titleBar: {
+            enable: true,
+            text: "Horror Film Quiz"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
     //Note Taker
+    const openPopupboxNotes = () => {
+        const content = (
+            <>
+                <img className="portfolio-image-popupbox" src={Notes} alt="Note Taker" />
+                <p className="portfolio-description"><br />
+                A note taking app that is able to save, delete, and write in real time. This includes Express.js, Javascript, Node.js, JSON files,
+                HTML, and CSS. 
+                 <br /><br />
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/note-taker")}>https://github.com/tabathambell/note-taker</a><br />
+                    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://tmb-note-taker.herokuapp.com/")}>https://tmb-note-taker.herokuapp.com/</a>
+                </p>
+            </>
+        )
+        PopupboxManager.open({ content })
+    }
+
+    const popupboxConfigNotes = {
+        titleBar: {
+            enable: true,
+            text: "Note Taker"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
     //Workday Scheduler
+    const openPopupboxCreep = () => {
+        const content = (
+            <>
+                <img className="portfolio-image-popupbox" src={Schedule} alt="Workday Scheduler" />
+                <p className="portfolio-description"><br />
+                The workday scheduler was an assignment that I did during my coding bootcamp that uses third party APIs in order to make a functional, easy to use workday scheduler.
+                It's fully operational using javascript, CSS, and HTML. It is also using Moment.js and can track which day you're on using a color code system.
+                 <br /><br />
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/employee-tracker")}>https://github.com/tabathambell/employee-tracker</a><br />
+                </p>
+            </>
+        )
+        PopupboxManager.open({ content })
+    }
+
+    const popupboxConfigScheduler = {
+        titleBar: {
+            enable: true,
+            text: "Workday Scheduler"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
     //Tech Blog
+    const openPopupboxBlog = () => {
+        const content = (
+            <>
+                <img className="portfolio-image-popupbox" src={Creepventures} alt="Full Stack School Project" />
+                <p className="portfolio-description"><br />
+                This is a blog project that I did in coding bootcamp where we were to create a basic blog using Handlebars.js, Node.js, Express.js, and basic Javascript.
+                 <br /><br />
+                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/blog-project")}>https://github.com/tabathambell/blog-project</a><br />
+                    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://tmb-tech-blog.herokuapp.com/")}>https://tmb-tech-blog.herokuapp.com/</a>
+                </p>
+            </>
+        )
+        PopupboxManager.open({ content })
+    }
+
+    const popupboxConfigBlog = {
+        titleBar: {
+            enable: true,
+            text: "Tech Blog"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
 
     return (
@@ -94,7 +187,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                        <div className="portfolio-image-box" onClick={openPopupboxQuiz}>
                             <img className="portfolio-image" src={Horror} alt="Horror Quiz" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -102,7 +195,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                        <div className="portfolio-image-box" onClick={openPopupboxBlog}>
                             <img className="portfolio-image" src={Tech} alt="Tech Blog" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -110,7 +203,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                        <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
                             <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -118,17 +211,21 @@ const Portfolio = () => {
                     </div>
 
                     <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                        <div className="portfolio-image-box" onClick={openPopupboxNotes}>
                             <img className="portfolio-image" src={Notes} alt="Note Taker" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <PopupboxContainer {...popupboxConfigMovie} />
             <PopupboxContainer {...popupboxConfigCreep} />
+            <PopupboxContainer {...popupboxConfigQuiz} />
+            <PopupboxContainer {...popupboxConfigBlog} />
+            <PopupboxContainer {...popupboxConfigNotes} />
+            <PopupboxContainer {...popupboxConfigScheduler} />
         </div>
     )
 }
