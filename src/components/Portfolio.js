@@ -92,6 +92,7 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+
                     <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Horror} alt="Horror Quiz" />
@@ -99,6 +100,7 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+
                     <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Tech} alt="Tech Blog" />
@@ -106,6 +108,7 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+
                     <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
@@ -113,6 +116,7 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+
                     <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Notes} alt="Note Taker" />
@@ -120,6 +124,7 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <PopupboxContainer {...popupboxConfigMovie} />
