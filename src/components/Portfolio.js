@@ -145,7 +145,7 @@ const Portfolio = () => {
     const openPopupboxBlog = () => {
         const content = (
             <>
-                <img className="portfolio-image-popupbox" src={Creepventures} alt="Full Stack School Project" />
+                <img className="portfolio-image-popupbox" src={Tech} alt="Full Stack School Project" />
                 <p className="portfolio-description"><br />
                 This is a blog project that I did in coding bootcamp where we were to create a basic blog using Handlebars.js, Node.js, Express.js, and basic Javascript.
                  <br /><br />
