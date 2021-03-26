@@ -178,7 +178,7 @@ const Portfolio = () => {
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
 
-                    <div className="image-box-wrapper row justify-content-center">
+                    <div className="image-box-wrapper row justify-content-center pr-1">
                         <div className="portfolio-image-box" onClick={openPopupboxCreep}>
                             <img className="portfolio-image" src={Creepventures} alt="Creepventures" />
                             <div className="overflow"></div>
