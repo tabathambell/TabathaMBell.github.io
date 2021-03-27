@@ -71,7 +71,7 @@ const Portfolio = () => {
             <>
                 <img className="portfolio-image-popupbox" src={Horror} alt="Horror Quiz" />
                 <p className="portfolio-description"><br />
-                The Horror Movie Quiz was a fun project that includes the use of Web APIs, HTML, CSS, and Javascript. This projet also uses Moment.js. 
+                The Horror Movie Quiz was a fun project that includes the use of Web APIs, HTML, CSS, and Javascript. This projet also uses Moment.js.
                 You are able to go through the quiz and get a time and a score at the end of it and compare it to peers using local storage.
                  <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/codequiz")}>https://github.com/tabathambell/codequiz</a><br />
@@ -97,7 +97,7 @@ const Portfolio = () => {
                 <img className="portfolio-image-popupbox" src={Notes} alt="Note Taker" />
                 <p className="portfolio-description"><br />
                 A note taking app that is able to save, delete, and write in real time. This includes Express.js, Javascript, Node.js, JSON files,
-                HTML, and CSS. 
+                HTML, and CSS.
                  <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/note-taker")}>https://github.com/tabathambell/note-taker</a><br />
                     <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://tmb-note-taker.herokuapp.com/")}>https://tmb-note-taker.herokuapp.com/</a>
@@ -117,7 +117,7 @@ const Portfolio = () => {
     }
 
     //Workday Scheduler
-    const openPopupboxScheduler= () => {
+    const openPopupboxScheduler = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={Schedule} alt="Workday Scheduler" />
@@ -177,48 +177,48 @@ const Portfolio = () => {
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
-
-                    <div className="image-box-wrapper row justify-content-center pr-3">
-                        <div className="portfolio-image-box" onClick={openPopupboxCreep}>
-                            <img className="portfolio-image" src={Creepventures} alt="Creepventures" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
-                    <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxQuiz}>
-                            <img className="portfolio-image" src={Horror} alt="Horror Quiz" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
-                    <div className="image-box-wrapper row justify-content-center pr-3">
-                        <div className="portfolio-image-box" onClick={openPopupboxBlog}>
-                            <img className="portfolio-image" src={Tech} alt="Tech Blog" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
-                    <div className="image-box-wrapper row justify-content-center pr-3">
-                        <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
-                            <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
-                    <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxNotes}>
-                            <img className="portfolio-image" src={Notes} alt="Note Taker" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
                 </div>
+
+                <div className="image-box-wrapper row justify-content-center pr-3">
+                    <div className="portfolio-image-box" onClick={openPopupboxCreep}>
+                        <img className="portfolio-image" src={Creepventures} alt="Creepventures" />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                </div>
+
+                <div className="image-box-wrapper row justify-content-center">
+                    <div className="portfolio-image-box" onClick={openPopupboxQuiz}>
+                        <img className="portfolio-image" src={Horror} alt="Horror Quiz" />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                </div>
+
+                <div className="image-box-wrapper row justify-content-center pr-3">
+                    <div className="portfolio-image-box" onClick={openPopupboxBlog}>
+                        <img className="portfolio-image" src={Tech} alt="Tech Blog" />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                </div>
+
+                <div className="image-box-wrapper row justify-content-center pr-3">
+                    <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
+                        <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                </div>
+
+                <div className="image-box-wrapper row justify-content-center">
+                    <div className="portfolio-image-box" onClick={openPopupboxNotes}>
+                        <img className="portfolio-image" src={Notes} alt="Note Taker" />
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                </div>
+
             </div>
             <PopupboxContainer {...popupboxConfigMovie} />
             <PopupboxContainer {...popupboxConfigCreep} />
