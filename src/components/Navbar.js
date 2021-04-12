@@ -32,6 +32,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link to="https://github.com/tabathambell" className="nav-link" href="https://github.com/tabathambell">github</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="https://www.linkedin.com/in/tabatha-bell/" className="nav-link" href="https://www.linkedin.com/in/tabatha-bell/">linkedin</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
