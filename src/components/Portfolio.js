@@ -183,14 +183,6 @@ const Portfolio = () => {
                     </div>
 
                     <div className="image-box-wrapper row justify-content-center">
-                        <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
-                            <img className="portfolio-image" src={Schedule} alt="Workday Scheduler" />
-                            <div className="overflow"></div>
-                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                        </div>
-                    </div>
-
-                    <div className="image-box-wrapper row justify-content-center">
                         <div className="portfolio-image-box" onClick={openPopupboxNotes}>
                             <img className="portfolio-image" src={Notes} alt="Note Taker" />
                             <div className="overflow"></div>
@@ -205,7 +197,6 @@ const Portfolio = () => {
             <PopupboxContainer {...popupboxConfigQuiz} />
             <PopupboxContainer {...popupboxConfigBlog} />
             <PopupboxContainer {...popupboxConfigNotes} />
-            <PopupboxContainer {...popupboxConfigScheduler} />
         </div>
     )
 }
