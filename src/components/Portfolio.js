@@ -2,7 +2,6 @@ import React from 'react'
 import Movie from '../images/movieapp.PNG';
 import Creepventures from '../images/creepventures.PNG';
 import Horror from '../images/quiz.png';
-import Schedule from '../images/scheduler.png';
 import Notes from '../images/notetaker.png';
 import Tech from '../images/blog.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +22,7 @@ const Portfolio = () => {
                 the HTML, CSS and overall design layout of the application and a little bit of the API's.
                  <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/nickmay9/MovieApp-TeamProject1")}>https://github.com/nickmay9/MovieApp-TeamProject1</a>
+                    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://nickmay9.github.io/MovieApp-TeamProject1/")}>https://nickmay9.github.io/MovieApp-TeamProject1/</a>
                 </p>
             </>
         )
@@ -75,6 +75,7 @@ const Portfolio = () => {
                 You are able to go through the quiz and get a time and a score at the end of it and compare it to peers using local storage.
                  <br /><br />
                     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/codequiz")}>https://github.com/tabathambell/codequiz</a><br />
+                    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://tabathambell.github.io/codequiz/")}>https://tabathambell.github.io/codequiz/</a>
                 </p>
             </>
         )
@@ -111,31 +112,6 @@ const Portfolio = () => {
         titleBar: {
             enable: true,
             text: "Note Taker"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
-    //Workday Scheduler
-    const openPopupboxScheduler = () => {
-        const content = (
-            <>
-                <img className="portfolio-image-popupbox" src={Schedule} alt="Workday Scheduler" />
-                <p className="portfolio-description"><br />
-                The workday scheduler was an assignment that I did during my coding bootcamp that uses third party APIs in order to make a functional, easy to use workday scheduler.
-                It's fully operational using javascript, CSS, and HTML. It is also using Moment.js and can track which day you're on using a color code system.
-                 <br /><br />
-                    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/employee-tracker")}>https://github.com/tabathambell/employee-tracker</a><br />
-                </p>
-            </>
-        )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigScheduler = {
-        titleBar: {
-            enable: true,
-            text: "Workday Scheduler"
         },
         fadeIn: true,
         fadeInSpeed: 500

@@ -24,6 +24,8 @@ const About = () => {
                         My diverse set of skills include HTML5 + CSS + Javascript, all of the way up to CSS frameworks
                         such as Bootstrap and UIKit, Responsive Design, JQuery, Node.js, REST, Express.js, MongoDB,
                         Rational Expressions, React.js and MySQL.
+
+                        To contact me, please e-mail: <a href="mailto:tabathambell@live.com">tabathambell@live.com</a>
                     </p>
                 </div>
             </div>
