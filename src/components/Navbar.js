@@ -30,10 +30,10 @@ const Navbar = () => {
                             <Link smooth={true} to="contact" className="nav-link" href="#">contact</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="https://github.com/tabathambell">github</a>
+                            <a href="https://github.com/tabathambell" className="nav-link">github</a>
                         </li>
                         <li className="nav-item">
-                            <a href="https://www.linkedin.com/in/tabatha-bell/">linkedin</a>
+                            <a href="https://www.linkedin.com/in/tabatha-bell/" className="nav-link">linkedin</a>
                         </li>
                     </ul>
                 </div>
