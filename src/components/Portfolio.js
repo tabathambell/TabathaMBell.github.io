@@ -4,6 +4,7 @@ import Creepventures from '../images/creepventures.PNG';
 import Horror from '../images/quiz.png';
 import Notes from '../images/notetaker.png';
 import Tech from '../images/blog.png';
+import Maniacs from '../images/maniacs.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
@@ -142,6 +143,31 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
+        //Maniacs of Horror Nights
+        const openPopupboxManiacs = () => {
+            const content = (
+                <>
+                    <img className="portfolio-image-popupbox" src={Maniacs} alt="Maniacs of Horror Nights" />
+                    <p className="portfolio-description"><br />
+                    A fan content driven social media website based around the event of Halloween Horror Nights. Features a like and dislike system, comments, replies, a chat room, slideshow in the main page, and an explore page with working, clickable maps.
+                     <br /><br />
+                        <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/tabathambell/maniacs-of-hhn")}>https://github.com/tabathambell/maniacs-of-hhn</a><br />
+                        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://maniacs-of-hhn.herokuapp.com/")}>https://maniacs-of-hhn.herokuapp.com/</a>
+                    </p>
+                </>
+            )
+            PopupboxManager.open({ content })
+        }
+    
+        const popupboxConfigManiacs = {
+            titleBar: {
+                enable: true,
+                text: "Maniacs of Horror Nights"
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
@@ -189,6 +215,14 @@ const Portfolio = () => {
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
+
+                    <div className="image-box-wrapper row justify-content-center">
+                        <div className="portfolio-image-box" onClick={openPopupboxManiacs}>
+                            <img className="portfolio-image" src={Maniacs} alt="Maniacs of Horror Nights" />
+                            <div className="overflow"></div>
+                            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -197,6 +231,7 @@ const Portfolio = () => {
             <PopupboxContainer {...popupboxConfigQuiz} />
             <PopupboxContainer {...popupboxConfigBlog} />
             <PopupboxContainer {...popupboxConfigNotes} />
+            <PopupboxContainer {...popupboxConfigManiacs} />
         </div>
     )
 }
